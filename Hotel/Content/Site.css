@@ -1,6 +1,15 @@
-﻿body {
+﻿h1, a {
+    color: white;
+}
+.navbar-inverse .navbar-nav > li > a {
+    color: white;
+}
+    body {
     padding-top: 50px;
     padding-bottom: 20px;
+    background: url(../img/9.jpg) no-repeat;
+    background-size: 100%;
+    color: white;
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -9,11 +18,20 @@
     padding-right: 15px;
 }
 
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
 /* Override the default bootstrap behavior where horizontal description lists 
    will truncate terms that are too long to fit in the left column 
 */
 .dl-horizontal dt {
     white-space: normal;
+}
+.navbar {
+    border-color: rgba(31, 20, 13, 1);
+    background-color: rgba(56, 37, 24, 0.8);
 }
 
 /* Set width on the form input elements since they're 100% wide by default */
@@ -21,4 +39,40 @@ input,
 select,
 textarea {
     max-width: 280px;
+}
+.search {
+    padding: 20px;
+    border-radius: 5px;
+}
+.text {
+    text-align: center;
+}
+.body-content {
+    background-color: rgba(56, 37, 24, 0.8);
+    border-radius: 5px;
+    border-bottom-color: #c1c1c1;
+}
+
+footer {
+    height: 100px;
+    color: #666;
+    background-color: rgba(56, 37, 24, 0.8);
+    padding: 17px 0 18px 0;
+    border-top: 1px solid rgba(31, 20, 13, 1);
+    margin-top: -80px;
+}
+.wrap {
+    min-height: 100%;
+    padding-top: 5%;
+}
+.btnSub {
+    background-color: rgb(56, 37, 24);
+    border-color: black;
+    width: 100px;
+}
+.margin-right {
+    margin-right: 10px;
+}
+.types {
+    width: 100px;
 }

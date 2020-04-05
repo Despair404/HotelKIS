@@ -1,0 +1,20 @@
+﻿@model Hotel.Models.SearchModel
+<div id="results">
+    @foreach (var item in Model.types)
+    {
+    <div class="container-fluid">
+        <div class="col-lg-9">
+            <img src="~/img/@item.Photo" />
+        </div>
+        <div class="col-lg-3">
+            <h1>@item.Name</h1>
+            <input type="hidden" name="type" value="@item" />
+            <h1>@item.Cost рублей за ночь</h1>
+            <h2>Максимум гостей: @item.MaxPer</h2>
+            <form class="form-inline" action="/Book/FlightsSearch" id="form" method="post">
+                <button type="submit" class="btn btn-primary ">Забронировать</button>
+            </form>
+        </div>
+    </div>
+    }
+ </div>

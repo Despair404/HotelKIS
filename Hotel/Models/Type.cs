@@ -10,6 +10,8 @@ namespace Hotel.Models
         public int ID { get; set; }
         public string Name { get; set; }
         public int MaxPer { get; set; }
+        public decimal Cost { get; set; }
+        public string Photo { get; set; }
         public ICollection<Room> Rooms{ get; set; }
         public Type()
         {
